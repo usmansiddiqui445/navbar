@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐔𝐇𝐌 & 𝐌𝐔𝐒𝐈𝐂</title>
+    <style>
+        body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+
+.netflix{
+  position: relative;
+  width: 360px;
+  height: 520px;
+  overflow: hidden;
+  transform: scale(.7);
+}
+
+.netflix:before{
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  z-index: 2;
+  width: 100%;
+  height: 120px;
+  background: #000;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  transform: scaleX(1.5);
+}
+.netflix:after, .heading:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #000, #000);
+  z-index:3;
+  animation: animate 2s linear forwards;
+}
+@keyframes animate{
+  0%{
+    right: 0;
+  }
+  100%{
+    right: -200%;
+  }
+}
+
+.netflix span{
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  background: #fff;
+}
+
+.netflix span:nth-child(1){
+  background: #b00612;
+  left: 0;
+}
+
+.netflix span:nth-child(2){
+  background: #e50815;
+  left: 0;
+  z-index: 1;
+  transform-origin: top left;
+  transform: skewX(24.8deg);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.netflix span:nth-child(3){
+  background: #b00612;
+  right: 0;
+}
+
+.heading{
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  top: -50px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: arial;
+  font-size: 45px;
+  letter-spacing: 10px;
+}
+    </style>
+</head>
+<body>
+    <body>
+        <div class="logo">
+          <div class="netflix">
+            <img src="data:image/jpeg;base64,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" alt=""style="width:100%;">
+          </div>
+            <a href="index1.html"><h3 class="heading">𝐔𝐇𝐌 & 𝐌𝐔𝐒𝐈𝐂</h3></a>
+        </div>
+      </body>
+</body>
+</html>
